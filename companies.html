@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companies - JobHub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #f6f7fb;
+            color: #333;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: #ffffffd9;
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .navbar .container {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .logo i {
+            margin-right: 8px;
+            color: #4b7bec;
+        }
+
+        .nav-links a {
+            margin-left: 18px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #4b7bec;
+        }
+
+        .post-job-btn {
+            background: #4b7bec;
+            color: white !important;
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .post-job-btn:hover {
+            background: #3867d6;
+        }
+
+        .profile-image {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #4b7bec;
+        }
+
+        /* MAIN CONTENT */
+        .static-page-main {
+            margin-top: 40px;
+            padding-bottom: 50px;
+        }
+
+        .static-page-main .container {
+            width: 85%;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 14px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #2d3436;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #636e72;
+            line-height: 1.6;
+        }
+
+        .section-placeholder {
+            margin-top: 25px;
+            background: #f1f3f7;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid #4b7bec;
+        }
+
+        /* COMPANY CARD */
+        .company-profile-card {
+            margin-top: 25px;
+            background: white;
+            width: fit-content;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .company-profile-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .company-profile-logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .apply-btn {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 8px 16px;
+            background: #4b7bec;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .apply-btn:hover {
+            background: #3867d6;
+        }
+
+        /* FOOTER */
+        .footer {
+            margin-top: 50px;
+            background: #fff;
+            padding: 25px 0;
+            border-top: 1px solid #eee;
+        }
+
+        .footer .container {
+            width: 85%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-links a {
+            margin-right: 18px;
+            text-decoration: none;
+            color: #777;
+            transition: 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #4b7bec;
+        }
+
+        .social-icons a {
+            margin-left: 10px;
+            color: #555;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #4b7bec;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="navbar">
+    <div class="container">
+        <div class="logo">
+            <i class="fas fa-briefcase"></i> JOBWAVE
+        </div>
+        <nav class="nav-links">
+            <a href="job_portal.html">Find Jobs</a>
+            <a href="companies.html">Companies</a>
+            <a href="career-advice.html">Career Advice</a>
+            <a href="salaries.html">Salaries</a>
+            <a href="employers.html" class="for-employers">For Employers</a>
+            <a href="resume.html" class="nav-link-button"><i class="fas fa-file-alt"></i> Build Resume</a>
+            <a href="#" class="profile">
+                <img src="https://i.pinimg.com/736x/12/98/8b/12988bd732ca94999a1673e6573dbffe.jpg" alt="User Profile" class="profile-image">
+            </a>
+        </nav>
+    </div>
+</header>
+
+    <main class="static-page-main">
+        <div class="container">
+            <h1>Browse Companies</h1>
+            <p>Explore a wide range of companies offering exciting career opportunities. Find detailed company profiles, culture insights, and direct links to their open positions.</p>
+            
+            <div class="section-placeholder">
+                <p>Company listings and search features will go here.</p>
+                <p>For now, check out some popular companies in the sidebar on the main page, or imagine a grid of company cards here.</p>
+
+                <div class="company-profile-card">
+                    <img src="https://via.placeholder.com/60" alt="Example Corp Logo" class="company-profile-logo">
+                    <h3>Example Corp</h3>
+                    <p>Leading innovator in AI solutions.</p>
+                    <a href="#" class="apply-btn">View Jobs</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Help Center</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="terms.html">Terms & Privacy</a>
+                <a href="terms.html">Privacy Agreement</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

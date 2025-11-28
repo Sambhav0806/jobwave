@@ -1,0 +1,1062 @@
+/* General Body and Utility Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: #3498db;
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /* Prevent logo text from wrapping */
+}
+
+.navbar .logo i {
+    margin-right: 8px;
+    font-size: 28px;
+}
+
+.navbar .nav-links {
+    display: flex;
+    align-items: center; /* Vertically center all items */
+    flex-wrap: nowrap; /* Keep all nav links on one line */
+}
+
+.navbar .nav-links a {
+    margin-left: 25px; /* Spacing between nav items */
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    white-space: nowrap; /* Prevent text links from wrapping */
+}
+
+.navbar .nav-links a:hover {
+    color: #3498db;
+}
+
+.navbar .nav-links .for-employers {
+    color: #7f8c8d;
+}
+
+/* Style for the Build Resume button in the navbar (using new class) */
+.navbar .nav-links .nav-link-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-left: 25px; /* Space from the previous link */
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Prevent button text from wrapping */
+}
+
+.navbar .nav-links .nav-link-button i {
+    margin-right: 5px;
+}
+
+.navbar .nav-links .nav-link-button:hover {
+    background-color: #2980b9;
+}
+
+/* Style for the profile image in the navbar */
+.navbar .nav-links .profile {
+    margin-left: 25px; /* Space from the button */
+    display: flex; /* To center the image within its container if needed */
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .nav-links .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    vertical-align: middle;
+    border: 2px solid #3498db;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Theme Toggle Button Styles */
+.navbar .nav-links .theme-toggle-btn {
+    background-color: #555; /* A neutral gray for the toggle button */
+    color: #fff;
+    border: none;
+    padding: 8px 15px; /* Adjust padding if needed */
+    border-radius: 5px;
+    margin-left: 15px; /* Space it from the previous button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .nav-links .theme-toggle-btn:hover {
+    background-color: #777; /* Slightly lighter gray on hover */
+}
+
+.navbar .nav-links .theme-toggle-btn i {
+    font-size: 16px; /* Adjust icon size if needed */
+    margin-right: 0; /* No margin if it's just an icon */
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('he.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 80px 0 60px;
+    text-align: center;
+    position: relative;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.search-bar input {
+    width: 400px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar .search-btn {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.search-bar .search-btn:hover {
+    background-color: #2980b9;
+}
+
+.search-bar .advanced-filters-btn {
+    background-color: #ecf0f1;
+    color: #333;
+}
+
+.search-bar .advanced-filters-btn:hover {
+    background-color: #bdc3c7;
+}
+
+.stats-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.stat-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+}
+
+.stat-box i {
+    font-size: 40px;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.stat-box span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Link styling for stat-boxes */
+.stat-box-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from parent */
+    display: flex; /* Make the anchor act like a flex container to properly wrap the stat-box */
+}
+
+.stat-box-link:hover .stat-box {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Content Section (for job_portal.html) */
+.content-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Job listings takes 2/3, sidebar 1/3 */
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.job-listings h2, .sidebar h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+.job-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.job-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    margin-right: 15px;
+    object-fit: contain;
+    border: 1px solid #eee;
+}
+
+.job-info h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.job-info p {
+    font-size: 15px;
+    color: #777;
+    margin: 0;
+}
+
+.job-tag {
+    background-color: #2ecc71; /* Green for new */
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: auto; /* Pushes it to the right */
+}
+
+.job-tag.new {
+    background-color: #2ecc71;
+}
+
+.job-location {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.salary-range {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.job-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.job-meta .tag {
+    background-color: #eee;
+    color: #555;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.job-meta .tag.orange {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.job-meta .tag.green {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.apply-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-left: auto;
+    transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Sidebar (for job_portal.html) - Now with actual styles */
+.sidebar {
+    background-color: #fff; /* White background */
+    padding: 25px; /* Inner spacing */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    position: sticky; /* Make it sticky as the user scrolls */
+    top: 20px; /* Distance from the top when it becomes sticky */
+    align-self: start; /* Align to the start of the grid cell in content-section */
+    /* If you want a max-height with scroll, add: */
+    /* max-height: calc(100vh - 40px); */
+    /* overflow-y: auto; */
+}
+
+.company-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.company-logo-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.company-logo-item img {
+    max-width: 100%;
+    height: 40px; /* Adjust as needed */
+    object-fit: contain;
+}
+
+.career-resources .resource-item {
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    font-weight: 500;
+    color: #555;
+    transition: transform 0.2s ease;
+}
+
+.career-resources .resource-item a { /* Ensure links within resource items also look good */
+    display: flex;
+    align-items: center;
+    color: inherit; /* Inherit color from resource-item */
+    text-decoration: none;
+    width: 100%; /* Make the link fill the item */
+}
+
+.career-resources .resource-item:hover {
+    transform: translateY(-3px);
+}
+
+.career-resources .resource-item i {
+    margin-right: 10px;
+    color: #3498db;
+    font-size: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links a {
+    color: #ecf0f1;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #3498db;
+}
+
+.social-icons a {
+    color: #ecf0f1;
+    font-size: 20px;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #3498db;
+}
+
+/* Static page main section general styling */
+.static-page-main {
+    padding: 60px 0;
+    min-height: calc(100vh - 180px); /* Adjust based on navbar/footer height */
+}
+
+.static-page-main h1 {
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.static-page-main p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 18px;
+    color: #555;
+}
+
+.static-page-main .section-placeholder {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-top: 30px;
+    text-align: left; /* Align content inside placeholder */
+}
+
+.static-page-main .section-placeholder h2,
+.static-page-main .section-placeholder h3 {
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+/* Form styling for employers.html */
+.job-post-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.job-post-form .apply-btn {
+    width: auto;
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.job-post-form .apply-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Small adjustments for company-profile-card example (e.g. for companies.html) */
+.company-profile-card {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.company-profile-card .company-profile-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+}
+
+.company-profile-card h3 {
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.company-profile-card p {
+    font-size: 15px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.company-profile-card .apply-btn {
+    margin-top: 10px;
+}
+
+/* Resume Page Specific Styles */
+.resume-options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.resume-option-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Pushes button to bottom */
+}
+
+.resume-option-card i {
+    font-size: 60px;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.resume-option-card h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.resume-option-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 25px;
+    flex-grow: 1; /* Allows text to grow and push button down */
+    text-align: center; /* Ensure paragraph text is centered */
+}
+
+.resume-option-card .apply-btn {
+    margin-top: 15px;
+    align-self: center; /* Center the button */
+}
+
+/* Upload Form Specific Styles (within resume option card) */
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%; /* Make form take full width of card */
+}
+
+.upload-form input[type="file"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.upload-form .apply-btn {
+    width: 100%;
+    max-width: 200px; /* Limit button width for better appearance */
+}
+
+/* Specific styling for the resume builder form */
+.resume-builder-section .resume-builder-form {
+    background-color: #f0f8ff; /* Light blue background for contrast */
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    margin-top: 25px;
+    text-align: left; /* Align form labels/inputs */
+    width: 100%;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.resume-builder-form h4 {
+    color: #3498db;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.resume-builder-form .form-group {
+    margin-bottom: 15px;
+}
+
+.resume-builder-form label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 500;
+    color: #444;
+}
+
+.resume-builder-form input[type="text"],
+.resume-builder-form input[type="email"],
+.resume-builder-form input[type="tel"],
+.resume-builder-form input[type="url"],
+.resume-builder-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.resume-builder-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.resume-builder-form .apply-btn {
+    margin-top: 25px;
+    width: auto; /* Allow button to size naturally */
+    padding: 12px 30px;
+    font-size: 17px;
+    align-self: center; /* Center the button within the form */
+}
+
+/* New styles for the resume download link and status messages */
+.resume-builder-form .download-link {
+    background-color: #28a745 !important; /* Forces green background, can remove !important if no conflicts */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block; /* Allows padding and background to work well */
+    transition: background-color 0.3s ease;
+}
+
+.resume-builder-form .download-link:hover {
+    background-color: #218838 !important; /* Darker green on hover */
+}
+
+#resumeStatus, #uploadStatus {
+    font-size: 15px;
+    font-weight: 500;
+    color: #555; /* Default grey color, JS will change it */
+    min-height: 20px; /* Give it some space even when empty */
+    text-align: center; /* Center the status messages */
+    width: 100%; /* Ensure it takes full width within its container */
+}
+
+/* Contact Page Specific Styles */
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.contact-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Pushes button to bottom */
+    min-height: 250px; /* Ensure cards have similar height */
+}
+
+.contact-card i {
+    font-size: 50px;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.contact-card h3 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Allows text to grow and push buttons down */
+}
+
+.contact-card .apply-btn { /* Re-using the general apply-btn style */
+    display: inline-block; /* Ensure it behaves like a button */
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    white-space: nowrap; /* Prevent text wrap */
+}
+
+/* About Us Page Specific Styles */
+.about-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.about-feature-card {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-feature-card i {
+    font-size: 45px;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.about-feature-card h3 {
+    font-size: 20px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.about-feature-card p {
+    font-size: 15px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.values-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+    text-align: left;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.values-list li {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.values-list li i {
+    color: #2ecc71; /* A nice green for checkmarks/icons */
+    margin-right: 15px;
+    font-size: 24px;
+    min-width: 24px; /* Ensure icons align */
+    text-align: center;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+    .navbar .nav-links {
+        display: none; /* Hide nav links on smaller screens by default, would need a hamburger menu for full responsiveness */
+    }
+
+    .navbar .container {
+        justify-content: center; /* Center logo if nav links are hidden */
+    }
+
+    .hero-section h1 {
+        font-size: 38px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar input {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .search-bar button {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .stats-boxes {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .stat-box {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .content-section {
+        grid-template-columns: 1fr; /* Stack job listings and sidebar on small screens */
+    }
+
+    .company-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for companies on tablets */
+    }
+
+    .footer .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-links a, .social-icons a {
+        margin: 0 10px;
+    }
+
+    .static-page-main h1 {
+        font-size: 34px;
+    }
+
+    .static-page-main p {
+        font-size: 16px;
+    }
+
+    .resume-options-grid,
+    .contact-info-grid,
+    .about-feature-grid { /* Added about-feature-grid here */
+        grid-template-columns: 1fr; /* Stack resume options and contact cards on small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 32px;
+    }
+
+    .company-grid {
+        grid-template-columns: 1fr; /* 1 column for companies on phones */
+    }
+
+    .static-page-main {
+        padding: 40px 0;
+    }
+
+    .static-page-main h1 {
+        font-size: 28px;
+    }
+
+    .static-page-main p {
+        font-size: 15px;
+    }
+
+    .resume-option-card,
+    .contact-card,
+    .about-feature-card { /* Added about-feature-card here */
+        padding: 25px;
+        min-height: auto; /* Allow height to adjust */
+    }
+}
+/* --- Dark Mode Styles --- */
+body.dark-mode {
+    background-color: #1a1a2e; /* Darker background */
+    color: #e0e0e0; /* Lighter text */
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .navbar {
+    background-color: #2c3e50;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ... (Include ALL other dark mode specific styles for .navbar, .hero-section, .stat-box, .job-card, .sidebar, .footer, .form-group, etc. from the previous comprehensive dark mode CSS block) ... */
+
+body.dark-mode .nav-links .nav-link-button { /* Adjust this for the toggle button itself */
+    background-color: #3d5a80;
+    color: #fff;
+}
+
+body.dark-mode .nav-links .nav-link-button:hover {
+    background-color: #2a3d53;
+}
+
+/* Make sure the theme-toggle-btn itself adapts in dark mode */
+body.dark-mode .navbar .nav-links .theme-toggle-btn {
+    background-color: #3d5a80; /* Darker background for the button in dark mode */
+    color: #e0e0e0; /* Lighter icon */
+}
+
+body.dark-mode .navbar .nav-links .theme-toggle-btn:hover {
+    background-color: #2a3d53;
+}
+/* --- Terms & Privacy Page Specific Styles --- */
+.terms-privacy-page .intro-text {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+    line-height: 1.8;
+}
+
+.terms-privacy-page .policy-section {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.terms-privacy-page .policy-section h2 {
+    font-size: 32px;
+    color: #3498db;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.terms-privacy-page .policy-section h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.terms-privacy-page .policy-section p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.terms-privacy-page .policy-section ul {
+    list-style: disc; /* Default disc bullets */
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.terms-privacy-page .policy-section ul li {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+/* Dark Mode Adjustments for Terms & Privacy Page */
+body.dark-mode .terms-privacy-page .intro-text {
+    color: #bbb;
+}
+
+body.dark-mode .terms-privacy-page .policy-section {
+    background-color: #2c3e50; /* Darker background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .terms-privacy-page .policy-section h2 {
+    color: #5dade2; /* Lighter blue for dark mode */
+    border-bottom-color: #3d5a80;
+}
+
+body.dark-mode .terms-privacy-page .policy-section h3 {
+    color: #e0e0e0; /* Lighter text for dark mode */
+}
+
+body.dark-mode .terms-privacy-page .policy-section p,
+body.dark-mode .terms-privacy-page .policy-section ul li {
+    color: #ccc; /* Lighter text for dark mode */
+}
