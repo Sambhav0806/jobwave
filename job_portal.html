@@ -3,119 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JobHub - Find Your Dream Job</title>
-    <link rel="stylesheet" href="style.css">
+    <title>JobHub - Get your dream job</title>
+
+    
+    <link rel="stylesheet" href="style1.css">
+
+    
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-    <header class="navbar">
+
+
+<header class="navbar">
     <div class="container">
         <div class="logo">
             <i class="fas fa-briefcase"></i> Career Connect
         </div>
+
         <nav class="nav-links">
-            <a href="#job-listings-section">Find Jobs</a> <a href="companies.html">Companies</a>
-            <a href="career.html">Career Advice</a> <a href="salaries.html">Salaries</a>
-            
-            
-            <button id="darkModeToggle" class="nav-link-button theme-toggle-btn" type="button" aria-label="Toggle Theme">
-                    <i class="fas fa-moon"></i> 
-                </button>
-            
+            <a href="job_portal.html">Find Jobs</a>
+            <a href="companies.html">Companies</a>
+            <a href="career.html">Career Advice</a>
+            <a href="salaries.html">Salaries</a>
+            <a href="demo.html">demo</a>
+
+            <button id="darkModeToggle" class="nav-link-button theme-toggle-btn" type="button">
+                <i class="fas fa-moon"></i>
+            </button>
 
             <a href="#" class="profile">
-                <img src="https://i.pinimg.com/736x/12/98/8b/12988bd732ca94999a1673e6573dbffe.jpg" alt="User Profile" class="profile-image">
+                <img src="https://i.pinimg.com/736x/12/98/8b/12988bd732ca94999a1673e6573dbffe.jpg"
+                     alt="User Profile" class="profile-image">
             </a>
         </nav>
     </div>
 </header>
 
-    <main>
-        <section class="hero-section">
-            <div class="container">
-                <h1>Find Your Dream Job Today</h1>
-                <div class="search-bar">
-                    <input type="text" placeholder="Search by Job Title or Keywords...">
-                    <button class="search-btn"><i class="fas fa-search"></i> Search Jobs</button>
-                    <button class="advanced-filters-btn">Advanced Filters</button>
-                </div>
-                <div class="stats-boxes">
-                    <div class="stat-box">
-                        <i class="fas fa-chart-line"></i>
-                        <span>Millions of Jobs</span>
-                    </div>
-                    <div class="stat-box">
-                        <i class="fas fa-building"></i>
-                        <span>Top Companies</span>
-                    </div>
-                    <div class="stat-box">
-                        <i class="fas fa-lightbulb"></i>
-                        <span>Expert Career Tips</span>
-                    </div>
-                </div>
+
+<main>
+
+
+<section class="hero-section">
+    <div class="container">
+        <h1>Get your dream job</h1>
+
+        <div class="search-bar">
+            <input type="text" id="keywordInput" placeholder="Search by Job Title or Keywords...">
+            <input type="text" id="locationInput" placeholder="Location (City / Remote)">
+            <button class="search-btn" id="searchBtn">
+                <i class="fas fa-search"></i> Search Jobs
+            </button>
+        </div>
+
+        <div class="stats-boxes">
+            <div class="stat-box">
+                <i class="fas fa-chart-line"></i>
+                <span>Thousands of Jobs</span>
             </div>
-        </section>
-
-        <section class="content-section container">
-            <div class="job-listings" id="job-listings-section">
-                <h2>Featured Jobs</h2>
-                <div id="jobCardsContainer">
-                    </div>
+            <div class="stat-box">
+                <i class="fas fa-building"></i>
+                <span>Top Companies</span>
             </div>
-
-            <div class="sidebar">
-                <h2>Popular Companies</h2>
-                <div class="company-grid">
-                    <div class="company-logo-item">
-                        <img src="https://wallpapers.com/images/thumbnail/tesla-logo-redand-black-8iff64keq3v9fqg5.webp" alt="Tesla">
-                    </div>
-                    <div class="company-logo-item">
-                        <img src="https://pngimg.com/d/microsoft_PNG17.png" alt="Microsoft">
-                    </div>
-                    <div class="company-logo-item">
-                        <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/2/21/Nvidia_logo.svg/2560px-Nvidia_logo.svg.png" alt="Nvidia">
-                    </div>
-                    <div class="company-logo-item">
-                        <img src="https://pngimg.com/d/amazon_PNG8.png" alt="Amazon">
-                    </div>
-                    <div class="company-logo-item">
-                        <img src="https://www.freepnglogos.com/uploads/google-logo-png/file-google-logo-svg-wikimedia-commons-23.png" alt="Google">
-                    </div>
-                    <div class="company-logo-item">
-                        <img src="https://www.transparentpng.com/thumb/apple-logo/d9RxbG-apple-logo-free-png.png" alt="Apple">
-                    </div>
-                </div>
-
-                <h2>Career Resources</h2>
-                <div class="career-resources">
-                    <div class="resource-item">
-                      <a href="resume.html">  <i class="fas fa-file-alt"></i> Resume Writing Guide </a>
-                    </div>
-                    <div class="resource-item">
-                      <a href="salaries.html"> <i class="fas fa-dollar-sign"></i> Salary Negotiation </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2023 JOBHUB. All rights reserved.</p> <div class="footer-links">
-                <a href="about.html">About Us</a> <a href="contact.html">Help Center</a>
-                <a href="contact.html">Contact Us</a>
-                <a href="terms.html">Terms & Privacy</a> </div>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="stat-box">
+                <i class="fas fa-lightbulb"></i>
+                <span>Career Guidance</span>
             </div>
         </div>
-    </footer>
-    <script src="script.js"></script>
+    </div>
+</section>
+
+
+<section class="content-section container">
+
     
+    <div class="job-listings" id="job-listings-section">
+        <h2>Featured Jobs</h2>
+        <div id="jobCardsContainer">
+           
+        </div>
+    </div>
+
    
-    
+    <div class="sidebar">
+        <h2>Popular Companies</h2>
+
+        <div class="company-grid">
+            <div class="company-logo-item">
+                <img src="https://pngimg.com/d/microsoft_PNG17.png" alt="Microsoft">
+            </div>
+            <div class="company-logo-item">
+                <img src="https://pngimg.com/d/amazon_PNG8.png" alt="Amazon">
+            </div>
+            <div class="company-logo-item">
+                <img src="https://pngimg.com/d/google_PNG19635.png" alt="Google">
+            </div>
+            <div class="company-logo-item">
+                <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/2/21/Nvidia_logo.svg/2560px-Nvidia_logo.svg.png" alt="Nvidia">
+            </div>
+            <div class="company-logo-item">
+                <img src="https://www.transparentpng.com/thumb/apple-logo/d9RxbG-apple-logo-free-png.png" alt="Apple">
+            </div>
+            <div class="company-logo-item">
+                <img src="https://pngimg.com/d/tesla_PNG24.png" alt="Tesla">
+            </div>
+        </div>
+
+        <h2>Career Resources</h2>
+        <div class="career-resources">
+            <div class="resource-item">
+                <a href="resume.html">
+                    <i class="fas fa-file-alt"></i> Resume Writing Guide
+                </a>
+            </div>
+            <div class="resource-item">
+                <a href="salaries.html">
+                    <i class="fas fa-dollar-sign"></i> Salary Negotiation
+                </a>
+            </div>
+        </div>
+    </div>
+
+</section>
+</main>
+
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 JobHub. All rights reserved.</p>
+
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Help Center</a>
+            <a href="terms.html">Terms & Privacy</a>
+        </div>
+
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>

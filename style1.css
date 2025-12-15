@@ -1,4 +1,4 @@
-/* General Body and Utility Styles */
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -25,7 +25,6 @@ h1, h2, h3 {
     color: #2c3e50;
 }
 
-/* Navbar */
 .navbar {
     background-color: #fff;
     padding: 15px 0;
@@ -44,7 +43,7 @@ h1, h2, h3 {
     color: #3498db;
     display: flex;
     align-items: center;
-    white-space: nowrap; /* Prevent logo text from wrapping */
+    white-space: nowrap; 
 }
 
 .navbar .logo i {
@@ -54,16 +53,16 @@ h1, h2, h3 {
 
 .navbar .nav-links {
     display: flex;
-    align-items: center; /* Vertically center all items */
-    flex-wrap: nowrap; /* Keep all nav links on one line */
+    align-items: center; 
+    flex-wrap: nowrap; 
 }
 
 .navbar .nav-links a {
-    margin-left: 25px; /* Spacing between nav items */
+    margin-left: 25px; 
     color: #555;
     font-weight: 500;
     transition: color 0.3s ease;
-    white-space: nowrap; /* Prevent text links from wrapping */
+    white-space: nowrap; 
 }
 
 .navbar .nav-links a:hover {
@@ -74,17 +73,17 @@ h1, h2, h3 {
     color: #7f8c8d;
 }
 
-/* Style for the Build Resume button in the navbar (using new class) */
+
 .navbar .nav-links .nav-link-button {
     background-color: #3498db;
     color: #fff;
     padding: 8px 15px;
     border-radius: 5px;
-    margin-left: 25px; /* Space from the previous link */
+    margin-left: 25px; 
     display: inline-flex;
     align-items: center;
     transition: background-color 0.3s ease;
-    white-space: nowrap; /* Prevent button text from wrapping */
+    white-space: nowrap; 
 }
 
 .navbar .nav-links .nav-link-button i {
